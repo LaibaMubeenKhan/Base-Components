@@ -1,0 +1,48 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragment.CatchUpFragment">
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="296dp"
+    android:text="CatchUpFragment"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="32sp"
+    app:layout_constraintEnd_toEndOf="@+id/tvTeamName"
+    app:layout_constraintHorizontal_bias="0.484"
+    app:layout_constraintStart_toStartOf="@+id/tvTeamName"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/tvTeamName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:text="Team 1"
+    android:textColor="@color/black"
+    android:textSize="22sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.467"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView6"
+    app:layout_constraintVertical_bias="0.072" />
+
+<TextView
+    android:id="@+id/tvTeamScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="22sp"
+    android:padding="8dp"
+    android:textColor="@color/black"
+    android:layout_marginTop="12dp"
+    app:layout_constraintEnd_toEndOf="@+id/tvTeamName"
+    app:layout_constraintStart_toStartOf="@+id/tvTeamName"
+    app:layout_constraintTop_toBottomOf="@+id/tvTeamName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
