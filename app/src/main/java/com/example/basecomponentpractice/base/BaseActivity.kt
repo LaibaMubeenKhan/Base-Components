@@ -14,6 +14,8 @@ abstract class BaseActivity<VB: ViewBinding,VM:ViewModel>:AppCompatActivity() {
     lateinit var viewModel:VM
     abstract fun getViewModelClass(): Class<VM>
     abstract fun initViews()
+//    var progressBar: ProgressBar? = binding.root.findViewById<ProgressBar>(R.id.progressBar)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +25,34 @@ abstract class BaseActivity<VB: ViewBinding,VM:ViewModel>:AppCompatActivity() {
         //for view model
         viewModel= ViewModelProvider(this).get(getViewModelClass())
 
+
         // calling Abstract method
         initViews()
     }
 
-
+//    fun progress(status:Status,view: View){
+//  when(status){
+//       is Status.Loading ->{
+//           Log.e("progress","Loading")
+//           view?.visibility=View.VISIBLE
+//
+//      }
+//      is Status.Success->{
+//          Log.e("progress","Success")
+//          view?.visibility=View.GONE
+//
+//      }
+//      is Status.Failed->{
+//          Log.e("progress","Failed")
+//          view?.visibility=View.GONE
+//          Toast.makeText(this,"No Network",Toast.LENGTH_LONG).show()
+//      }
+//  }
+////
+////
+////
+////
+//}
 
 
 }

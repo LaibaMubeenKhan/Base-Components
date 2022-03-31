@@ -11,7 +11,7 @@ class CatchUpFragment : BaseFragment<FragmentCatchUpBinding, BottomBaseViewModel
     override fun getViewModelClass(): Class<BottomBaseViewModel> = BottomBaseViewModel::class.java
 
     override fun initViews() {
-        _binding.tvTeamName.text=_viewModel.nameCatchup
+
 
     }
 
